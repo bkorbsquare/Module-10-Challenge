@@ -1,0 +1,17 @@
+{
+    "name": "",
+    "version": "1.0.0",
+    "description": "Team Profile Generator",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "url": "https://github.com/bkorbsquare/Module-10-Challenge"
+    },
+    "author": "Brandon Krussow",
+    "license": "MIT",
+    "dependencies": {
+        "inquirer": "^8.2.4"
+    }
+}
