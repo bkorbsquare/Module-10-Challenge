@@ -12,14 +12,14 @@ test('Sets name via constructor arguments',() => {
 });
 
 test('Sets id via cunstructor argument', () => {
-    const testValue = 100;
-    const e = new Employee('Boo', testValue);
+    const testValue = 'Number';
+    const e = new Employee('Foo', testValue);
     expect(e.id).toBe(testValue);
 });
 
 test('sets email via constructor argument', () => {
     const testValue = 'name@email.com';
-    const e = new Employee('Boo', 0, testValue);
+    const e = new Employee('Foo', 0, testValue);
     expect(e.email).toBe(testValue);
 });
 
@@ -30,8 +30,8 @@ test('gets name via getName()', () => {
 });
 
 test('gets id via getId()', () => {
-    const testValue = '100';
-    const e = new Employee('Boo', testValue);
+    const testValue = 'Number';
+    const e = new Employee('Foo', testValue);
     expect(e.getId()).toBe(testValue);
 });
 

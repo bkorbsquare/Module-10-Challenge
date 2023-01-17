@@ -4,20 +4,14 @@ const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
-
-
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
-
 const render = require("./lib/htmlRenderer");
-
 const team = [];
 const teamIds = [];
 
 function createManager() {
-
     console.log("Who is the manager of this team?")
-
     inquirer
     .prompt([{
         type: "input",
@@ -50,14 +44,10 @@ function createManager() {
         createTeamMember();
         // console.log(manager)
     })
-    
 }
 
-
 function createTeamMember() {
-
     console.log("Let's add some members to the team!")
-
     inquirer
     .prompt(
         {
@@ -69,7 +59,6 @@ function createTeamMember() {
                 "Intern",
                 "I'm done adding team members"
             ]
-
         }
     ).then(response => {
         switch(response.role) {
@@ -86,7 +75,6 @@ function createTeamMember() {
 };
 
 function createEngineer() {
-
     inquirer
     .prompt([
         {
@@ -122,7 +110,6 @@ function createEngineer() {
 }
 
 function createIntern() {
-
     inquirer
     .prompt([
         {
@@ -154,11 +141,9 @@ function createIntern() {
         team.push(intern);
         createTeamMember();
     });
-
 };
 
 function renderHtml() {
-
     if (!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR)
       }
@@ -167,7 +152,6 @@ function renderHtml() {
         if (err) throw err
 
         });
-
 };
 
 createManager();
