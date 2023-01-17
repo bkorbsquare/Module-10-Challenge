@@ -1,6 +1,6 @@
 const inquirer = require ('inquirer');
 const fs = require ('fs');
-const generateTeam = require ('./src/page-template.js'); // yet to create this path
+const generateTeam = require ('./templates');
 
 const Engineer = require ('./lib/Engineer');
 const Intern = require ('./lib/Intern');
