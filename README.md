@@ -4,7 +4,7 @@
 
 - This code displays a Team Profile Generator.
 - I wanted to create a template to generate a team for projects.
-- I coded JavaScript using the Inquirier package through Node, and I used Jest for testing.
+- I coded JavaScript using the Inquirer package through Node, and I used Jest for testing.
 - Given more time I would style the output page more.
 
 ## Installation
